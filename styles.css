@@ -24,6 +24,7 @@ header {
 header .logo {
     font-size: 28px;
     font-weight: bold;
+    color: #2980b9;
 }
 
 nav ul {
@@ -31,6 +32,7 @@ nav ul {
     display: flex;
     margin: 0;
     padding: 0;
+    
 }
 
 nav ul li {
@@ -38,13 +40,36 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ecf0f1;
+    color: #03bafc;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
     color: #3498db;
+}
+nav ul li {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #03bafc;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    
+}
+
+nav ul li a i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+nav ul li a:hover {
+    color: #3498db;
+    
 }
 
 .search-bar {
@@ -83,7 +108,7 @@ main {
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(233, 10, 10, 0.1);
 }
 
 h2 {
@@ -237,11 +262,88 @@ nav a {
     background-color: #555;
 }
 
-/* Login/Signup Section Styling */
-.login-signup {
+/* Login/Register Section Styling */
+.login-register {
     display: flex;
     align-items: center;
+    margin-left: 20px; /* Adjust margin as needed */
 }
 
-.login-signup button {
-    background-color:
+.login-register a {
+    background-color: #3498db; /* Button color */
+    color: #fff; /* Text color */
+    text-decoration: none;
+    padding: 10px 15px; /* Adjust padding for a more compact look */
+    border-radius: 25px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s;
+    border: 1px solid transparent; /* Transparent border for consistent sizing */
+}
+
+.login-register a:hover {
+    background-color: #2980b9; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.login-register span {
+    color: #fff; /* Color for the separator */
+    margin: 0 0; /* Remove space around the separator */
+    font-weight: bold; /* Make the separator bold */
+}
+
+/* Combined Button Effect */
+.login-register .login-btn {
+    border-top-left-radius: 25px; /* Rounded corners on the left */
+    border-bottom-left-radius: 25px; /* Rounded corners on the left */
+}
+
+.login-register .signup-btn {
+    border-top-right-radius: 25px; /* Rounded corners on the right */
+    border-bottom-right-radius: 25px; /* Rounded corners on the right */
+}
+
+.login-register .signup-btn {
+    border-left: 1px solid #2980b9; /* Border between buttons */
+}
+
+/* Language Selection Section Styling */
+.language-selection {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    padding: 10px; /* Padding around the section */
+    background-color: #fff; /* White background for contrast */
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: box-shadow 0.3s; /* Smooth transition for shadow */
+}
+
+.language-selection:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.language-selection label {
+    margin-right: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.language-selection select {
+    padding: 10px;
+    border-radius: 25px; /* Rounded corners for dropdown */
+    border: 1px solid #ccc;
+    background-color: #f0f0f0; /* Light background */
+    font-size: 16px;
+    transition: border-color 0.3s, background-color 0.3s;
+    cursor: pointer;
+}
+
+.language-selection select:hover {
+    border-color: #3498db; /* Border color on hover */
+    background-color: #e6f7ff; /* Light blue background on hover */
+}
+
+.language-selection select:focus {
+    border-color: #2980b9; /* Darker border on focus */
+    outline: none;
+    background-color: #d0e8ff; /* Slightly darker blue background on focus */
+}
